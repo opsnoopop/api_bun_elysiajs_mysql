@@ -8,6 +8,7 @@ A simple Bun Elysiajs API application and MySQL, containerized with Docker.
 **Bun Container: FROM oven/bun:1**
 - OS Alpine Linux 3.20.6
 - Bun: 1.2.18
+- Elysiajs: 1.3.8
 - MySQL2: 3.14.3
 
 **MySQL Container: FROM mysql:8.4.5**
