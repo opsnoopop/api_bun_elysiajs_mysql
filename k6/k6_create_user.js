@@ -50,11 +50,11 @@ export function handleSummary(data) {
   const minutes = (utcPlus7.getUTCMinutes() < 10) ? "0" + utcPlus7.getUTCMinutes() : utcPlus7.getUTCMinutes();
   const seconds = (utcPlus7.getUTCSeconds() < 10) ? "0" + utcPlus7.getUTCSeconds() : utcPlus7.getUTCSeconds();
 
-  const filename = "/k6/1_health_check_" + year +  month + day + "_" + hours + minutes + seconds + ".html";
+  const filename = "/k6/2_create_user_" + year +  month + day + "_" + hours + minutes + seconds + ".html";
   
   return {
     [filename]: htmlReport(data, {
-      title: "health_check_api_bun_elysiajs_mysql_" + year + month + day + "_" + hours + minutes + seconds
+      title: "create_user_api_bun_elysiajs_mysql_" + year + month + day + "_" + hours + minutes + seconds
     }),
   };
 }
