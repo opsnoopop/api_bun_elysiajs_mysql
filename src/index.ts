@@ -100,4 +100,4 @@ const shutdown = async () => {
 process.on('SIGINT', shutdown)
 process.on('SIGTERM', shutdown)
 
-console.log(`🦊 Elysia is running at http://localhost:${app.server?.port}`)
+console.log(`Elysia is running at http://localhost:3000`)
